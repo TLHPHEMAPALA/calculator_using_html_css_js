@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class="topic">Calculator</h1>
+    <div class="screen">
+       <input type="text" name="" id="display" >
+    </div>
+    <div class="numbers">
+        <div class="number-grid">
+            <button  onclick="clearDisplay()">AC</button>
+            <button  onclick="clearDisplay()" >C</button>
+            <button class="operator" >%</button>
+            <button class="operator">/</button>
+        </div>
+        <div class="number-grid">
+            <button  onclick="displayScreen('7')">7</button>
+            <button  onclick="displayScreen('8')">8</button>
+            <button  onclick="displayScreen('9')">9</button>
+            <button class="operator" onclick="displayScreen('*')">*</button>
+        </div>
+        <div class="number-grid">
+            <button  onclick="displayScreen('4')">4</button>
+            <button  onclick="displayScreen('5')">5</button>
+            <button  onclick="displayScreen('6')">6</button>
+            <button class="operator" onclick="displayScreen('-')">-</button>
+        </div>
+        <div class="number-grid">
+            <button  onclick="displayScreen('1')">1</button>
+            <button  onclick="displayScreen('2')">2</button>
+            <button  onclick="displayScreen('3')">3</button>
+            <button class="operator" onclick="displayScreen('+')" >+</button>
+        </div>
+        <div class="number-grid">
+            <button  onclick="displayScreen('0')">0</button>
+            <button  onclick="displayScreen('00')">00</button>
+            <button class="operator" onclick="displayScreen('.')">.</button>
+            <button class="operator" onclick="calculate()" >=</button>
+        </div>
+    </div>    
+</body>
+</html>
